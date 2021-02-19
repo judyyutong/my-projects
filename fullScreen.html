@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Full Screen Layout</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700;900&display=swap" rel="stylesheet">
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .banner{
+            width: 100%;
+            height: 700px;
+            background-color: #cccccc;
+            background: linear-gradient(115deg, rgb(224, 221, 216) 50%, transparent 50%) center / 100% 100%, url(https://picsum.photos/1200/600) right center / auto 100%;
+        }
+        
+        .container{ 
+            width: 85%;
+            max-width: 1440px;
+            height: 100%;
+            margin: auto;
+        }
+        .banner-txt{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .banner-txt h1{
+            color:indigo;
+            font-size: 68px;
+            border-bottom: 1px solid #333;
+            font-weight: 900;
+            padding-bottom: 0.3em;
+            margin-bottom: 0.3em;
+        }
+        .banner-txt h1 small{
+            color: white;
+            display: block;
+            font-size: 45px;
+            font-weight: 700;
+        }
+        .banner-txt h2{
+            color:tomato;
+            font-size: 38px;
+            font-weight: 700;        }
+        .banner-txt p{
+            color:dimgray;
+            font-size:15px;
+            font-weight: 300;
+        }
+
+        </style>
+    </head>
+<body>
+    <div class="banner">
+        <div class="container">
+            <div class="banner-txt">
+                    <h1>
+                        金魚都能懂的
+                        <small>
+                            這個網頁畫面怎麼切
+                        </small>
+                    </h1>
+                    <h2>圖文滿版區塊</h2>
+                    <p>這畫面實在常見，在各種樣板網站可以說是設計常客
+                    <br>切不出來實在說不過去啊</p>
+            </div>
+        </div>
+    </div>
+</body>
