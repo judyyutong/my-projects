@@ -1,4 +1,4 @@
-# my-projects
+# my-practices
 
 https://judyyutong.github.io/my-projects/index.html
 
