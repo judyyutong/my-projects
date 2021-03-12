@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;500&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        body{
+            background-color:#F0F0F0;
+        }
+
+        .base{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrap{
+            width: 96%;
+            margin: 0 auto;
+            display: flex;
+            box-shadow: 12px 10px 40px 0px rgba(169,169,169,0.75);
+            
+        }
+
+        .item{
+            width: 25%;
+            position: relative;
+        }
+
+        .item img{
+            width: 100%;
+            height: 300px;
+            vertical-align: middle;
+            object-fit: cover;
+
+        }
+
+        .item .txt{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, .6);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: opacity .5s;
+        }
+
+        .item .title{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: darkslategrey;
+        }
+
+        .item:hover .txt{
+            opacity: 100;
+
+        }
+
+        .item h2{
+            font-size: 2.5vw;
+            color:Turquoise;
+            font-weight: 500;
+        }
+
+        .item h2:after{
+             content: '';
+             display: block;
+             width: 0%;
+             height: 2px;
+             margin: 10px 0;
+             background-color:DeepPink;
+             transition: width .5s .3s;
+        }
+
+        .item:hover h2:after{
+            width: 100%;
+        }
+        .item p{
+            font-size: 1.5vw;
+            color: white;
+            font-weight: 100;
+        }
+
+        h1{
+            font-size: 3vw;
+        }
+
+        h3{
+            font-size: 1vw
+            padding-bottom: 5px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+<div class="base">
+    <div class="wrap">
+        <div class="item">
+            <div class="title">
+                <h3>Other Words to Replace</h3>
+                <h1>Sometimes</h1>
+            </div>  
+        </div>
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1551672746-89991811c186"> 
+            <div class="txt">
+                <h2>Occasionally</h2>
+                <p> I occasionally go swimming.</p>
+            </div>  
+        </div>
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1462965326201-d02e4f455804  "> 
+            <div class="txt">
+                <h2>From time to time</h2>
+                <p>I listen to music from time to time.</p>
+            </div>  
+        </div>
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1474180637685-d9bf90314e55"> 
+            <div class="txt">
+                <h2>Every now and then</h2>
+                <p>Every now and then I clean the windows.</p>
+            </div>  
+        </div>
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba"> 
+            <div class="txt">
+                <h2>Once in a while</h2>
+                <p>I go to the movies once in a while.</p>
+            </div>  
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>

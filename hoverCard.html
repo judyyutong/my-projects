@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;500&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        body{
+            background-color:#F0F0F0;
+        }
+
+        .base{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrap{
+            width: 96%;
+            margin: 0 auto;
+            display: flex;
+            box-shadow: 12px 10px 40px 0px rgba(169,169,169,0.75);
+            
+        }
+
+        .item{
+            width: 25%;
+            position: relative;
+        }
+
+        .item img{
+            width: 100%;
+            vertical-align: middle;
+
+        }
+
+        .item .txt{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 20px;;
+            background-color: rgba(0, 0, 0, .6);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: opacity .5s;
+        }
+
+        .item:hover .txt{
+            opacity: 100;
+
+        }
+
+        .item h2{
+            font-size: 2.5vw;
+            color:Turquoise;
+            font-weight: 500;
+        }
+
+        .item h2:after{
+             content: '';
+             display: block;
+             width: 0%;
+             height: 2px;
+             margin: 10px 0;
+             background-color:DeepPink;
+             transition: width .5s .3s;
+        }
+
+        .item:hover h2:after{
+            width: 100%;
+        }
+        .item p{
+            font-size: 1.5vw;
+            color: white;
+            font-weight: 100;
+        
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="base">
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/500/600?random=10"> 
+            <div class="txt">
+                <h2>金魚都能懂的這個網頁畫面怎麼切：互動圖文卡片</h2>
+                <p>互動圖文卡片是我們在網頁中經常見到的另一種稀飯版，不會切你就遜掉囉。 </p>
+            </div>  
+        </div>
+
+        <div class="item">
+            <img src="https://picsum.photos/500/600?random=5"> 
+            <div class="txt">
+                <h2>稀飯版都不會切怎麼轉職</h2>
+                <p>看來我的網頁暴力班保證讓你邊痛邊學會 </p>
+            </div>  
+        </div>
+
+        <div class="item">
+            <img src="https://picsum.photos/500/600?random=30"> 
+            <div class="txt">
+                <h2>不知道你有沒有聽過網頁的都市傳說，千萬不要相信謠言</h2>
+                <p>網頁的都市傳說很多種，其中一種叫做兒子絕對定位老爸就要相對定位，這是啥鬼？ </p>
+            </div>  
+        </div>
+
+        <div class="item">
+            <img src="https://picsum.photos/500/600?random=20"> 
+            <div class="txt">
+                <h2>買線上課程前先想一想，還是先把免費的金魚系列練一練吧！</h2>
+                <p>買了不會看那不如來看免錢的，即使不看也不會有罪惡感，更不會心痛啊。 </p>
+            </div>  
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>
